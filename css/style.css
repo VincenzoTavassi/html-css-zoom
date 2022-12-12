@@ -1,13 +1,19 @@
 body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 
 /* Header */
 
 header {
     height: 100px;
-    background-color: black;
     position: relative;
 }
 
@@ -16,10 +22,82 @@ header {
     right: 0;
 }
 
-#window-options>.option-item {
+#window-options>.item-option {
     background-color: gray;
     border-radius: 20px;
     display: inline-block;
     padding: 4px 8px;
     margin: 5px;
+}
+
+/* main */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: calc(100vh - 100px - 100px);
+    overflow: auto;
+}
+
+.utente {
+    position: relative;
+}
+
+.microfono-nome {
+
+    background-color: rgba(0, 0, 0, .3);
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #333;
+    text-align: center;
+
+}
+
+.footer-option {
+    font-size: 20px;
+}
+
+.option-text {
+    margin-top: 10px;
+}
+
+
+footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.more {
+    font-size: 20px;
+}
+
+.highlighted-icon {
+
+    color: lightgreen;
+}
+
+#end-meeting {
+    background-color: #4A4A4A;
+    vertical-align: middle;
+    color: red;
+    line-height: 100px;
+    padding: 0 20px;
+    font-weight: bold;
+
 }
