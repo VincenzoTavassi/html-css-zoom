@@ -1,0 +1,25 @@
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+
+#window-options {
+    position: absolute;
+    right: 0;
+}
+
+#window-options>.option-item {
+    background-color: gray;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 5px;
+}
